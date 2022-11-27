@@ -16,4 +16,4 @@ samples_list = ['data_A']
  
 @cache.memoize(timeout=TIMEOUT)
 def hyy_dataframe():
-    return pd.read_csv('/Users/lvtrujillot/Github/notebooks-collection-opendata-dashapp/higgs-dash-app/assets/test-samplea.csv')
+    return pd.read_csv('/Users/lvtrujillot/Github/notebooks-collection-opendata-dashapp/higgs-dash-app/assets/hyy_data_sample_a.csv')
