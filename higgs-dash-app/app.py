@@ -10,12 +10,13 @@ server = flask.Flask(__name__) # define flask app.server
 
 app = dash.Dash(
     __name__,
+    title="Redescubriendo el Higgs - Dash App",
     server=server,
     suppress_callback_exceptions=True, 
     external_stylesheets=[
-        dbc.themes.SLATE,
-        FONT_AWSOME,
-        CUSTOM_STYLE
+        dbc.themes.SPACELAB,
+        FONT_AWSOME
+        #CUSTOM_STYLE
     ],
     meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1"}

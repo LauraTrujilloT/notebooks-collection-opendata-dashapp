@@ -1,5 +1,4 @@
 import dash_bootstrap_components as dbc
-#import dash_html_components as html
 from dash import html
 from dash.dependencies import Input, Output
 from app import app
@@ -10,7 +9,9 @@ from pages.iris import iris
 
 
 
-@app.callback(Output("page-content", "children"), [Input("url", "pathname")])
+@app.callback(
+    Output("page-content", "children"), 
+    [Input("url", "pathname")])
 def render_page_content(pathname):
     if pathname == home_page_location:
         return home.layout
