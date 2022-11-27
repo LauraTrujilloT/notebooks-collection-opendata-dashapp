@@ -2,10 +2,11 @@ import dash_bootstrap_components as dbc
 from dash import html
 from dash.dependencies import Input, Output
 from app import app
-from utils.constants import home_page_location, gdp_page_location, iris_page_location
+from utils.constants import home_page_location, gdp_page_location, iris_page_location, hyy_page_location
 from pages.home import home
 from pages.gdp import gdp
 from pages.iris import iris
+from pages.hyy import hyy
 
 
 
@@ -19,6 +20,8 @@ def render_page_content(pathname):
         return gdp.layout
     elif pathname == iris_page_location:
         return iris.layout
+    elif pathname == hyy_page_location:
+        return hyy.layout
     # If the user tries to reach a different page, return a 404 message
     return dbc.Jumbotron(
         [
