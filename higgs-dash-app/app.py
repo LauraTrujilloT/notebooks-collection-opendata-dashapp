@@ -13,7 +13,7 @@ app = dash.Dash(
     server=server,
     suppress_callback_exceptions=True, 
     external_stylesheets=[
-        dbc.themes.BOOTSTRAP,
+        dbc.themes.SLATE,
         FONT_AWSOME,
         CUSTOM_STYLE
     ],
