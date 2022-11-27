@@ -5,7 +5,7 @@ extraído de ATLAS Open Data
 from utils.hyy_functions import *
 
 # Data Sample A
-# Constan
+# Constants
 lumi = 0.5 #fb-1
 fraction = 0.8
 tuple_path = "https://atlas-opendata.web.cern.ch/atlas-opendata/samples/2020/GamGam/Data/" # web address
