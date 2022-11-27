@@ -1,8 +1,8 @@
 import dash
 import dash_bootstrap_components as dbc
 from flask_caching import Cache
-#from utils.external_assets import FONT_AWSOME, CUSTOM_STYLE
-#from layout.layout import layout
+from utils.external_assets import FONT_AWSOME, CUSTOM_STYLE
+from layout.layout import layout
 import flask
 
 
