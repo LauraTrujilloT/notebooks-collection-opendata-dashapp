@@ -1,2 +1,3 @@
 ## Folders or files to ignore
 cache-directory/
+cache-directory/*

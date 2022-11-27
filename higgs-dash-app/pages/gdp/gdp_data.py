@@ -1,5 +1,4 @@
 import pandas as pd
-
 from app import cache
 from utils.constants import TIMEOUT
 

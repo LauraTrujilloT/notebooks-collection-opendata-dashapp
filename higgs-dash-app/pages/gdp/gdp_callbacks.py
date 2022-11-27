@@ -1,7 +1,5 @@
 from dash.dependencies import Input, Output
-
 import plotly.express as px
-
 from app import app
 from pages.gdp.gdp_data import dataframe
 
