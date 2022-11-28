@@ -1,26 +1,27 @@
 from dash.dependencies import Input, Output
 import plotly.express as px
 from app import app
+from utils.hyy_functions import *
 from pages.hyy.hyy_data import hyy_dataframe
 
 
 @app.callback(
-    Output('hyy-graph', 'figure'),
+    Output('hyy-graph', 'srcDoc'),
     Input('myy-slider', 'value'))
 def update_figure(selected_value):
     hyy_df = hyy_dataframe()
     filtered_df = hyy_df[hyy_df.myy == selected_value]
-
-    fig = px.scatter(
-                    filtered_df, 
-                    x="photon_isTightID", 
-                    y="myy"
-                    )
+    html_fig = plot_data(data=hyy_df)
+    #fig = px.scatter(
+    #                filtered_df, 
+    #                x="photon_isTightID", 
+    #                y="myy"
+    #                )
                     #size="pop", 
                     #color="continent", 
                     #hover_name="country",
                     #log_x=True, 
                     #size_max=55)
-    fig.update_layout(transition_duration=500)
+    #fig.update_layout(transition_duration=500)
 
-    return fig
+    return html_fig
